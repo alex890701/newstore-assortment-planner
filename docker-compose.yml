@@ -1,0 +1,14 @@
+services:
+  xdxp:
+    build: .
+    image: xdxp:1.0.0
+    container_name: xdxp
+    restart: unless-stopped
+    ports:
+      - "3020:3020"
+    volumes:
+      - /vol1/1000/PATH/data/xdxp:/app/data
+    environment:
+      TZ: Asia/Shanghai
+      XD_PORT: "3020"
+      XD_DATA_DIR: /app/data

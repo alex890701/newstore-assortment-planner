@@ -1,0 +1,16 @@
+{
+  "name": "newstore-assortment-planner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "超市新开门店选品测算系统 · 多页面 + SQLite 持久化 + 服务端计算引擎",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "gen:cat5": "node tools/gen-cat5.js",
+    "test": "node tools/smoke.js"
+  },
+  "dependencies": {}
+}

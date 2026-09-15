@@ -1,0 +1,22 @@
+# === 依赖 ===
+node_modules/
+
+# === 本地数据（仅根目录 SQLite 业务库，不进版本库） ===
+# 注意：server/data/ 下的 cat5.json / regions.json 是运行必需种子数据，必须入库
+/data/
+*.db
+*.db-shm
+*.db-wal
+
+# === 本机敏感凭据（本地保留，勿提交） ===
+tools/_secrets.py
+
+# === 工作区 / 工具缓存 ===
+.workbuddy/
+.tmpchk/
+__pycache__/
+*.pyc
+.DS_Store
+
+# === 日志 ===
+*.log

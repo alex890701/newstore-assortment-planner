@@ -1,0 +1,10 @@
+node_modules
+.tmpchk
+.workbuddy
+.git
+data
+*.db
+*.log
+tools/__pycache__
+README.md
+overview.md
